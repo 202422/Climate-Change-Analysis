@@ -1,2 +1,2 @@
 # Climate-Change-Analysis
-The goal of this project is to visualize trends of different climate change indicators, identify features influencing them and suggest decisions to fight against climate changes
+L’objectif de ce projet est de visualiser les tendances de différents indicateurs du changement climatique, d’identifier les facteurs qui les influencent et de proposer des décisions pour lutter contre le changement climatique. Pour y parvenir, j’ai utilisé des fichiers Excel, Power Query, Power BI, DAX, etc.

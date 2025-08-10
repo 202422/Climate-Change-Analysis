@@ -3,6 +3,7 @@ L’objectif de ce projet est de visualiser les tendances de différents indicat
 
 ## Architecture du répertoire
 
+```plaintext
 ├───Données
 │   │   Description_Climate_Change_Dataset.pdf
 │   │
@@ -16,3 +17,4 @@ L’objectif de ce projet est de visualiser les tendances de différents indicat
 │       Climate Change Analysis.pbix
 │
 ├───Rapport
+├───Ressources

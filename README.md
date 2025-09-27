@@ -1,7 +1,7 @@
 # Climate-Change-Analysis
-L’objectif de ce projet est de visualiser les tendances de différents indicateurs du changement climatique, d’identifier les facteurs qui les influencent et de proposer des décisions pour lutter contre le changement climatique. Pour y parvenir, j’ai utilisé des fichiers Excel, Power Query, Power BI, DAX, etc.
+The goal of this project is to visualize the trends of various climate change indicators, identify the factors that influence them, and propose decisions to combat climate change. To achieve this, I used Excel files, Power Query, Power BI, DAX, and other tools.
 
-## Architecture du répertoire
+## Repository architecture
 
 ```plaintext
 ├───Données
@@ -26,19 +26,19 @@ L’objectif de ce projet est de visualiser les tendances de différents indicat
 ├───Ressources
 ```
 
-### Transformation Power Query
+### Power Query Transformation
 
-* Modifications des entêtes de colonnes et de leurs noms.
-* Modifications des noms des tables.
-* Suppression de doublons.
-* Vérification des valeurs avant modification du type de chaque colonne :
+* Modified column headers and their names.
+* Renamed tables.
+* Removed duplicates.
+* Checked values before changing the data type of each column:
 
-  * Suppression des lignes vides dans les 3 tables.
-  * Remplacement des valeurs `".."` dans **Pays.Capitale** par `"Aggregates"`.
-  * Remplacement de `"Not Classified"` dans **Pays.Catégorie de prêt** par `null`.
-  * Conserver uniquement les lignes des colonnes **Échelle** et **Décimales** (tables *Indicateur* et *Données*) qui ne contiennent pas `"Text"`.
-  * Remplacement de `".."` par `null` dans les années et conversion de leur type en nombre.
-* Dépivotage des colonnes années dans la table **Données**.
-* Exécution d’un script Python pour traduire les définitions dans la table **Indicateur**.
-* Exécution d’un script Python pour compléter les valeurs manquantes dans la table **Données** par la moyenne de chaque indicateur.
-* Conversion de la colonne **Valeur** de la table **Données** en type **Décimal** en utilisant les paramètres géographiques des **USA**.
+  * Deleted empty rows in the three tables.
+  * Replaced `".."` in **Country.Capital** with `"Aggregates"`.
+  * Replaced `"Not Classified"` in **Country.Loan Category** with `null`.
+  * Kept only the rows in the **Scale** and **Decimals** columns (in the *Indicator* and *Data* tables) that do not contain `"Text"`.
+  * Replaced `".."` with `null` in the year columns and converted them to numeric type.
+* Unpivoted the year columns in the **Data** table.
+* Executed a Python script to translate the definitions in the **Indicator** table.
+* Executed a Python script to fill missing values in the **Data** table with the average of each indicator.
+* Converted the **Value** column in the **Data** table to **Decimal** type using the **US** locale settings.
